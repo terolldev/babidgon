@@ -1,0 +1,139 @@
+@font-face { font-family: Panton; src: url('../css/fonts/panton-regular.ttf'); } 
+@font-face { font-family: Panton; font-weight: bold; src: url('../css/fonts/panton-bold.ttf');}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Panton', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}   
+
+body {
+  background-color: #18181b;
+  color: #f1f1f1;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: 'Panton', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+::selection {
+    background-color: #a283c9;
+    color: #18181b;
+}
+
+a {
+  color: inherit;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.author {
+  display: flex;
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in both;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.author h1, .author p {
+  margin: 4px;
+}
+
+.author p {
+  color: #b6b6b6;
+  margin-left: 0.65vh;
+}
+
+.logo {
+  background-color: #8b5ddf;
+  border-radius: 15%;
+  margin-right: 8px;
+  width: 64px;
+  height: 64px;
+}
+
+.link-bar {
+  margin-left: center;
+  margin-top: 10px;
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in both;
+}
+
+.link-row {
+  display: center;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.socials {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  color: #868686;
+}
+
+.social-logo {
+  display: flex;
+  margin: 4px;
+}
+
+.footer {
+  font-size: 10px;
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in both;
+  color: #868686;
+  opacity: .3;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+@keyframes wipe-in {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (max-width: 578px) {
+  .wrapper {
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
+  
+  .link-bar{
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .link-row{
+    justify-content: center;
+  }
+}
