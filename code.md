@@ -1,3 +1,5 @@
+theme: minima
+
 import disnake
 from disnake.ext import command
 bot=commands.Bot()
