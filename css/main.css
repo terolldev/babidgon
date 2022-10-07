@@ -13,8 +13,8 @@ body {
 }   
 
 body {
-  background-color: #18181b;
-  color: #f1f1f1;
+  background-color: #36393f;
+  color: #8c8c8c;
   max-width: 700px;
   margin: 0 auto;
   padding: 16px;
@@ -22,18 +22,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: 2.5s cubic-bezier(0.25, 0.01, 0.3, 1) wipe-in both
   min-height: 100vh;
 }
 
 ::selection {
-    background-color: #a283c9;
-    color: #18181b;
+    background-color: #787878;
+    color: #ffffff;
+    animation: 2.5s cubic-bezier(0.25, 0.01, 0.3, 1) wipe-in both
 }
 
 a {
   color: inherit;
   transition: 0.2s;
   text-decoration: none;
+  animation: 2.5s cubic-bezier(0.25, 0.01, 0.3, 1) wipe-in both
 }
 
 a:hover {
@@ -52,6 +55,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  animation: 2.5s cubic-bezier(0.25, 0.01, 0.3, 1) wipe-in both
 }
 
 .author {
@@ -66,7 +70,7 @@ a:hover {
 }
 
 .author p {
-  color: #b6b6b6;
+  color: #a674f1;
   margin-left: 0.65vh;
 }
 
@@ -75,13 +79,14 @@ a:hover {
   border-radius: 15%;
   margin-right: 8px;
   width: 64px;
+  animation: 2.5s cubic-bezier(0.25, 0.01, 0.3, 1) wipe-in both
   height: 64px;
 }
 
 .link-bar {
   margin-left: center;
   margin-top: 10px;
-  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in both;
+  animation: 2.5s cubic-bezier(0.25, 0.01, 0.3, 1) wipe-in both;
 }
 
 .link-row {
@@ -104,13 +109,13 @@ a:hover {
 
 .footer {
   font-size: 10px;
-  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in both;
+  animation: 2.5s cubic-bezier(0.25, 1, 1, 1) wipe-in both;
   color: #868686;
   opacity: .3;
 }
 
 .footer a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @keyframes wipe-in {
